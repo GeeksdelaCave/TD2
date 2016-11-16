@@ -12,9 +12,6 @@ public class GestionDistance {
     }};
 
     public static int getDistance(String ville) {
-
         return distances.get(ville);
     }
-
-
 }

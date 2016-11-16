@@ -4,19 +4,20 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.ObjectInputStream;
-import java.util.ArrayList;
 import java.util.Collection;
+import java.util.TreeSet;
 
 public class Lecteur {
 
     /**
      * Lecteur d'objets depuis un fichier
+     *
      * @param fichier Le fichier à ouvrir pour receuillir les informations
      * @return Une collection d'objets contenant le contenu du fichier
      */
     public static Collection<Conteneur> charger(String fichier) {
 
-        Collection data = new ArrayList();
+        Collection data = new TreeSet<Conteneur>();
 
         try {
             /**
