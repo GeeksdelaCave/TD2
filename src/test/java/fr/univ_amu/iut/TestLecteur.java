@@ -6,6 +6,7 @@ import java.util.Collection;
 import java.util.TreeSet;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertSame;
 
 public class TestLecteur {
 
@@ -22,6 +23,6 @@ public class TestLecteur {
 
         Collection<Conteneur> conteneursDuFichier = Lecteur.charger("monFichier");
 
-        assertEquals(listOfData, conteneursDuFichier);
+        assertSame (listOfData, conteneursDuFichier);
     }
 }

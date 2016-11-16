@@ -10,6 +10,31 @@ public class Conteneur implements Serializable, Comparable<Conteneur> {
      */
     private static final long serialVersionUID = 3540335500357667800L;
 
+    @Override
+    public boolean equals(Object o) {
+        /**
+         * Teste si l'objet est le même (même adresse mémoire)
+         */
+        if (this == o) return true;
+
+        /**
+         * Teste si la
+         */
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Conteneur conteneur = (Conteneur) o;
+
+        if (poids != conteneur.poids) return false;
+        if (expediteur != null ? !expediteur.equals(conteneur.expediteur) : conteneur.expediteur != null) return false;
+        return destination != null ? destination.equals(conteneur.destination) : conteneur.destination == null;
+
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
     /**
      * Constructeur du conteneur
      *
