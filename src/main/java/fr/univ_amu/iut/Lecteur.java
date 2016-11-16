@@ -14,7 +14,7 @@ public class Lecteur {
      * @param fichier Le fichier à ouvrir pour receuillir les informations
      * @return Une collection d'objets contenant le contenu du fichier
      */
-    public static Collection charger(String fichier) {
+    public static Collection<Conteneur> charger(String fichier) {
 
         Collection data = new ArrayList();
 
