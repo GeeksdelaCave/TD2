@@ -31,4 +31,12 @@ public class Conteneur implements Serializable {
                 ", poids=" + poids +
                 '}';
     }
+
+    /**
+     * Détermine la distance à parcourir pour livrer le conteneur
+     * @return Retourne la distance Marseille-destination
+     */
+    public int getDistance() {
+        return GestionDistance.getDistance(destination);
+    }
 }
