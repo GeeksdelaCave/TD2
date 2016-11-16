@@ -11,7 +11,7 @@ public class Lecteur {
 
     /**
      * Lecteur d'objets depuis un fichier
-     *
+     * @bug Des fois, ça ne lit pas. Normalement fixé en ajoutant un UID à la classe Conteneur
      * @param fichier Le fichier à ouvrir pour receuillir les informations
      * @return Une collection d'objets contenant le contenu du fichier
      */

@@ -5,6 +5,9 @@ import java.io.Serializable;
 public class Conteneur implements Serializable, Comparable<Conteneur> {
     private String expediteur, destination;
     private int poids;
+    /**
+     * @var IUD de la classe, afin de l'identifier de manière unique. Permet de relire dans le fichier monFichier sans bug
+     */
     private static final long serialVersionUID = 3540335500357667800L;
 
     /**
