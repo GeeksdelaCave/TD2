@@ -5,7 +5,6 @@ import org.junit.Test;
 import java.util.Collection;
 import java.util.TreeSet;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertSame;
 
 public class TestLecteur {

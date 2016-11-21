@@ -4,9 +4,8 @@ public class GestionExpeditions {
 
     public static void main(String args[]) {
         System.out.println("******** CHARGEMENT VERS LA TUNISIE ! :D ********" + '\n');
-        for (Conteneur conteneur : Lecteur.charger("monFichier")) {
+        for (Conteneur conteneur : Lecteur.charger("monFichier"))
             System.out.println("Conteneur chargé ! (distance " + conteneur.getDistance() + ") || " + conteneur);
-        }
     }
 
 }

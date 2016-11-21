@@ -23,14 +23,14 @@ public class Lecteur {
             /**
              * Ouverture flux fichier
              */
-            FileInputStream fin = new FileInputStream("monFichier");
+            FileInputStream fin = new FileInputStream(fichier);
             ObjectInputStream in = new ObjectInputStream(fin);
 
             /**
              * Pour chaque contenu restant, le lire en tant qu'objet
              */
             while (fin.available() > 0)
-                data.add(in.readObject());
+                data.add( in.readObject());
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();

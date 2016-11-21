@@ -18,16 +18,29 @@ public class Conteneur implements Serializable, Comparable<Conteneur> {
         if (this == o) return true;
 
         /**
-         * Teste si la
+         * Teste si l'objet est de la même classe
          */
         if (o == null || getClass() != o.getClass()) return false;
 
+
         Conteneur conteneur = (Conteneur) o;
 
+        /**
+         * Test du poids
+         */
         if (poids != conteneur.poids) return false;
-        if (expediteur != null ? !expediteur.equals(conteneur.expediteur) : conteneur.expediteur != null) return false;
-        return destination != null ? destination.equals(conteneur.destination) : conteneur.destination == null;
 
+        /**
+         * Test de l'expéditeur
+         */
+        else if (expediteur != conteneur.expediteur) return false;
+
+        /**
+         * Test de la destination
+         */
+        else if (destination != conteneur.destination) return false;
+
+        return true;
     }
 
     @Override
