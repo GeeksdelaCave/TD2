@@ -91,6 +91,6 @@ public class Conteneur implements Serializable, Comparable<Conteneur> {
      * @return 1 si le conteneur actuel a la plus grande distance, -1 si c'est o
      */
     public int compareTo(Conteneur o) {
-        return getDistance() < o.getDistance() ? 1 : -1;
+        return getDistance() > o.getDistance() ? 1 : -1;
     }
 }

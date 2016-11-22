@@ -30,9 +30,5 @@ public class JeuxDeTests {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-        //Test
-
     }
-
 }
