@@ -93,4 +93,8 @@ public class Conteneur implements Serializable, Comparable<Conteneur> {
     public int compareTo(Conteneur o) {
         return getDistance() > o.getDistance() ? 1 : -1;
     }
+
+    public double getTarif(ITarif tarif) {
+        return tarif.getTarif(this);
+    }
 }
